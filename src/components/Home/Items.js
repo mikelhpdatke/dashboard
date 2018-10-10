@@ -2,9 +2,10 @@ import React, {Component} from 'react'
 import {
     Alert_Logo, ListAlert_Logo, DNS_Logo, Group_Logo, Agent_Logo, ArrowDown_Logo
     , Analyze_Logo, Sms_Logo, Statitic_Logo, Search_Logo, Transfer_Logo, User_Logo, Web_Logo, Email_Logo
-}
-    from '../../icon/Icon'
-
+}from '../../icon/Icon'
+import PieExample from './Pie'
+import LineExample from './Line'
+import { Line } from 'react-chartjs-2';
 const Items_Log = () => (
     <div className="row cardRowLog">
         <div className="col-md-3">
@@ -45,8 +46,9 @@ const Items_Log = () => (
 class Items extends Component{
     render(){
         return (
-            <div className="row cardRow">
-        <div className="col-md-4">
+        <div>
+        <div className="row cardRow">
+            <div className="col-md-4">
 
             <figure>
                 <a href="#">
@@ -54,10 +56,10 @@ class Items extends Component{
                 </a>
                 <figcaption style={{ textAlign: "center" }}>{this.props.figure_1}</figcaption>
             </figure>
-
+            
 
         </div>
-        <div className="col-md-4">
+            <div className="col-md-4">
             <figure>
                 <a href="#">
                     <img src={this.props.secondImg} style={{ width: 60, height: 60 }} alt="Image" />
@@ -65,7 +67,7 @@ class Items extends Component{
                 <figcaption style={{ textAlign: "center" }}>{this.props.figure_2}</figcaption>
             </figure>
         </div>
-        <div className="col-md-4">
+            <div className="col-md-4">
             <figure>
                 <a href="#">
                     <img src={this.props.thirdImg} style={{ width: 60, height: 60 }} alt="Image" />
@@ -73,14 +75,17 @@ class Items extends Component{
                 <figcaption style={{ textAlign: "center" }}>{this.props.figure_3}</figcaption>
             </figure>
         </div>
-    </div>
+        </div>
+        <LineExample/>
+        </div>
         );
     }
 }
 
 
 const Items_Dectects = () => (
-    //<div className="container">
+    
+    <div>
     <div className="row cardRow">
         <div className="col-md-4">
             <figure>
@@ -107,7 +112,8 @@ const Items_Dectects = () => (
             </figure>
         </div>
     </div>
-    //</div>
+    <PieExample/>
+    </div>
 )
 
 export {Items, Items_Log, Items_Dectects}

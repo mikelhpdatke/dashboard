@@ -3,8 +3,9 @@ import { Switch, Route } from 'react-router-dom'
 import './App.css';
 import PlayerAPI from '../api'
 import { Link } from 'react-router-dom'
-import Header from './Home/Header'
+import Header from './Header'
 import Home from './Home/Home'
+import LogManagement from './LogManagement/LogManagement'
 const App = () => (
   <div>
     <Header />
@@ -16,7 +17,7 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/roster' component={Roster}/>
+      <Route path='/log_management' component={LogManagement}/>
       <Route path='/schedule' component={Schedule}/>
     </Switch>
   </main>

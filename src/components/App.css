@@ -14,8 +14,11 @@
 }
 
 .img {
-  height: 100%;
-  width: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid green;
+  height: 50px;
+  width: 65px;
 }
 .App-header {
   background-color: #282c34;
@@ -65,4 +68,8 @@ hr {
   /* old IE */
   background-color: #333;
   /* Modern Browsers */
+}
+
+.main-bg-color{
+  background-color: red;
 }
