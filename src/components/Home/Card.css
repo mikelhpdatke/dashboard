@@ -27,7 +27,8 @@ p {
 }
 
 .fullCard {
-  width: 260px;
+  height: 450px;
+  width: 300px;
   border: 1px solid #ccc;
   border-radius: 1px;
   margin: 10px 5px;
@@ -36,6 +37,7 @@ p {
 
 .fullCardDetection {
   width: 280px;
+  height: 450px;
   border: 1px solid #ccc;
   border-radius: 1px;
   margin: 10px 5px;
@@ -43,7 +45,8 @@ p {
 }
 
 .fullCardLog {
-  width: 350px;
+  width: 380px;
+  height: 450px;
   border: 1px solid #ccc;
   border-radius: 1px;
   margin: 10px 5px;
