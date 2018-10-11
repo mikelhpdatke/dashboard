@@ -4,6 +4,7 @@ import '../App.css'
 const Footer = () => (
     <div>
     <hr/>
+    
     <div className="container">
         <div className="row">
             <div className="col-md-4" >
@@ -16,7 +17,7 @@ const Footer = () => (
             Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội.
             </div>
 
-            <div className="col-md-4">
+            <div className="col-4">
             Học viện cơ sở tại TP.Hồ Chí Minh
             <br/>
             11 Nguyễn Đình Chiểu, P.Đa Kao, Q.1 TP Hồ Chí Minh
@@ -25,8 +26,7 @@ const Footer = () => (
             <br/>
             Đường Man Thiện, P.Thiện Phú, Q.9 TP Hồ Chí Minh
             </div>
-        
-            <div className="col-md-4">
+            <div className="col" style={{ marginLeft: '100px' }}>
             <ul>
                 <li>Quản lý người dùng</li>
                 <li>Quản lý log truy cập</li>

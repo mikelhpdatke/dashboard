@@ -61,15 +61,9 @@ h4{
 }
 
 hr {
-  border: none;
-  margin-top:0px;
-  margin-bottom: 5px;
-  height: 3px;
-  /* Set the hr color */
-  color: #333;
-  /* old IE */
-  background-color: #333;
-  /* Modern Browsers */
+  color: #f00;
+  background-color: #f00;
+  height: 5px;
 }
 
 .main-bg-color{

@@ -87,7 +87,7 @@ const Items_Dectects = () => (
     
     <div>
     <div className="row cardRow">
-        <div className="col-md-4">
+        <div className="col-md-4" >
             <figure>
                 <a href="#">
                     <img src={Search_Logo} style={{ width: 60, height: 60 }} alt="Image" />

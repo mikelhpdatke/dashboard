@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Navbar } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import logo from '../icon/ptit70x50-01.jpg'
-
+import './App.css'
 const Header = () => (
     <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <Nav className="navbar navbar-expand-lg bg-light" fill variant="tabs" defaultActiveKey="/">
         <a class="navbar-brand" href="#">
         <img src={logo} width="70" height="50" style={{margin:0}} alt=""></img>
         </a>
@@ -51,8 +51,8 @@ const Header = () => (
                                                 }}>Tìm kiếm thông tin</NavLink>
             </div>
         </div>
-    </nav>
-    <hr/>
+    </Nav>
+    
     </div>
 
     
