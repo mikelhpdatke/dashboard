@@ -7,7 +7,7 @@ import PieExample from './Pie'
 import LineExample from './Line'
 import { Line } from 'react-chartjs-2';
 const Items_Log = () => (
-    <div className="row cardRowLog">
+    <div className="row cardRowLog" style={{ marginLeft: '8px' }}>
         <div className="col-md-3">
             <figure>
                 <a href="#">
@@ -47,7 +47,7 @@ class Items extends Component{
     render(){
         return (
         <div>
-        <div className="row cardRow">
+        <div className="row cardRow" >
             <div className="col-md-4">
 
             <figure>

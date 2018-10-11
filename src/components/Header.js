@@ -5,7 +5,7 @@ import logo from '../icon/ptit70x50-01.jpg'
 import './App.css'
 const Header = () => (
     <div>
-    <Nav className="navbar navbar-expand-lg bg-light" fill variant="tabs" defaultActiveKey="/">
+    <Nav className="navbar navbar-expand-lg bg-light" fill variant="tabs" defaultActiveKey="/"    >
         <a class="navbar-brand" href="#">
         <img src={logo} width="70" height="50" style={{margin:0}} alt=""></img>
         </a>
@@ -14,39 +14,39 @@ const Header = () => (
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <NavLink className="nav-item nav-link"  exact to='/' activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link"  exact to='/' activeStyle={{
                                                         fontWeight: "bold",
-                                                        color: "black",
+                                                        color: "red",
                                                         textDecoration: "underline"
                                                     }}>Trang chủ </NavLink>
-                <NavLink className="nav-item nav-link" to='/user_management'  activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link" to='/user_management'  activeStyle={{
                                                     fontWeight: "bold",
-                                                    color: "black",
+                                                    color: "red",
                                                     textDecoration: "underline"
                                                 }}>Quản lý người dùng</NavLink>
-                <NavLink className="nav-item nav-link"to='/log_management'  activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link"to='/log_management'  activeStyle={{
                                                     fontWeight: "bold",
-                                                    color: "black",
+                                                    color: "red",
                                                     textDecoration: "underline"
                                                 }}>Quản lý log truy cập</NavLink>
-                <NavLink className="nav-item nav-link"to='/service_management'  activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link"to='/service_management'  activeStyle={{
                                                     fontWeight: "bold",
-                                                    color: "black",
+                                                    color: "red",
                                                     textDecoration: "underline"
                                                 }}>Quản lý dịch vụ truy cập</NavLink>
-                <NavLink className="nav-item nav-link"to='/alert_broadcast'  activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link"to='/alert_broadcast'  activeStyle={{
                                                     fontWeight: "bold",
-                                                    color: "black",
+                                                    color: "red",
                                                     textDecoration: "underline"
                                                 }}>Quảng bá cảnh báo</NavLink>
-                <NavLink className="nav-item nav-link"to='/attack_detection'  activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link"to='/attack_detection'  activeStyle={{
                                                     fontWeight: "bold",
-                                                    color: "black",
+                                                    color: "red",
                                                     textDecoration: "underline"
                                                 }}>Phát hiện tấn công</NavLink>
-                <NavLink className="nav-item nav-link"to='/search'  activeStyle={{
+                <NavLink style={{color:"black", fontWeight: "bold"}}className="nav-item nav-link"to='/search'  activeStyle={{
                                                     fontWeight: "bold",
-                                                    color: "black",
+                                                    color: "red",
                                                     textDecoration: "underline"
                                                 }}>Tìm kiếm thông tin</NavLink>
             </div>
