@@ -19,7 +19,7 @@ const Items_Log = () => (
         <div className="col-md-3">
             <figure>
                 <a href="#">
-                    <img src={DNS_Logo} style={{ width: 60, height: 55 }} alt="Image" />
+                    <img src={DNS_Logo} style={{ width: 60, height: 60 }} alt="Image" />
                 </a>
                 <figcaption style={{ textAlign: "center" }}>DNSLog</figcaption>
             </figure>

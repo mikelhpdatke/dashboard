@@ -62,7 +62,9 @@ h4{
 
 hr {
   border: none;
-  height: 1px;
+  margin-top:0px;
+  margin-bottom: 5px;
+  height: 3px;
   /* Set the hr color */
   color: #333;
   /* old IE */
