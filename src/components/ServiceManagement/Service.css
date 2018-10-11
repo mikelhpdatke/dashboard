@@ -1,4 +1,4 @@
-#chartLog{
+#chartCountAccessService{
     width: 600px;
     height: 450px;
     margin: 0 auto;
@@ -9,13 +9,21 @@
     float: none;
 }
 
-#showRealtime{
+#formSubmitService{
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+}
+
+#showRealtimeService{
     align-items: center;
     justify-content: space-around;
     display: flex;
     float: none;
     margin-top: 0px;
-}
-.bold{
-    font-weight: bold;
 }

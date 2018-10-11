@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home/Home'
 import LogManagement from './LogManagement/LogManagement'
+import ServiceManagement from './ServiceManagement/ServiceManagement'
 const App = () => (
   <div>
     <Header />
@@ -18,7 +19,7 @@ const Main = () => (
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/log_management' component={LogManagement}/>
-      <Route path='/schedule' component={Schedule}/>
+      <Route path='/service_management' component={ServiceManagement}/>
     </Switch>
   </main>
 )
