@@ -134,16 +134,13 @@ class Test extends Component {
 
 const Home = () => (
     <div>
-
         <h4>IT Operation</h4>
-        
             <Row>
                 <Card />
                 <Card_Log />
                 <Card_Service />
                 <Card_Boardcast />
             </Row>
-        
         <h4></h4>
         <h4 className="title">Phát hiện tấn công</h4>
 

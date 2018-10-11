@@ -56,7 +56,6 @@ class Items extends Component{
                 </a>
                 <figcaption style={{ textAlign: "center" }}>{this.props.figure_1}</figcaption>
             </figure>
-            
 
         </div>
             <div className="col-md-4">
@@ -84,7 +83,6 @@ class Items extends Component{
 
 
 const Items_Dectects = () => (
-    
     <div>
     <div className="row cardRow">
         <div className="col-md-4" >

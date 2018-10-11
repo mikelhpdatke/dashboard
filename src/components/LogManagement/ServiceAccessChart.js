@@ -33,7 +33,9 @@ const data = {
 class ServiceAccessChart extends Component {
     render() {
         return (
-                <div></div>
+                <div>
+                    <Line data={data} height={400} width={800}/>
+                </div>
         )
     };
 }

@@ -5,26 +5,30 @@ import './Log.css'
 const LogManagement = () => (
     <div>
         <h4>Quản lý log truy cập theo thời gian thực</h4>
-        <br/>
+        <br />
         <div class="container">
-            <div class="row" style={{marginLeft:"220px"}}>
+            <div class="row" style={{ marginLeft: "100px" }}>
                 <div class="col-md-3">
-                    <label>Date:</label> &nbsp;&nbsp;
+                    <label className='bold'>Date:</label> &nbsp;&nbsp;
                     <input id="date" type="date" value="2018-10-10" />
                 </div>
                 <div class="col-md-3">
-                    <label>Time Begin:</label> &nbsp;&nbsp; <input id="time_start" type="time" required />
+                    <label className='bold'>Time Begin:</label> &nbsp;&nbsp; <input id="time_start" type="time" required />
                 </div>
                 <div class="col-md-3">
-                    <label>Time End:</label> &nbsp;&nbsp; <input id="time_end" type="time" required />
+                    <label className='bold'>Time End:</label> &nbsp;&nbsp; <input id="time_end" type="time" required />
                 </div>
-                
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-info">Info</button>
+                </div>
             </div>
-            </div>
-        <div className='chart'>
-        <ServiceAccessChart/>
         </div>
-        
+        <div id='chartLog'>
+                <ServiceAccessChart/>
+        </div>
+        <div id='showRealtime'>
+                    <button type="button" class="btn btn-danger">Show Realtime</button>
+                </div>
     </div>
 )
 
