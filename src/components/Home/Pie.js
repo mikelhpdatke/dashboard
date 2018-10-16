@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import { Pie } from 'react-chartjs-2';
+import openSocket from 'socket.io-client'
 
-const data = function () {
+
+const socket = openSocket('http://192.168.0.106:8000');
+
+function subscribeToServer(att_type, callback){
+    socket.on(att_type, res => callback(null, res));
+    socket.emit('sub_' + att_type, att_type);
+}
+
+const makeData = function (arrDataFromServer) {
 	return {
 		labels: [
 			'Mirai',
@@ -15,7 +24,8 @@ const data = function () {
 			'B9'
 		],
 		datasets: [{
-			data: Array.from({ length: 9 }, () => Math.floor(Math.random() * 40)),
+			data: arrDataFromServer,
+			//Array.from({ length: 9 }, () => Math.floor(Math.random() * 40)),
 			backgroundColor: [
 				'#FF6384',
 				'#36A2EB',
@@ -37,7 +47,6 @@ const data = function () {
 				'#696969',
 				'#fde1ff',
 				'#d82151'
-
 			]
 		}]
 	}
@@ -47,28 +56,24 @@ class PieExample extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			data: data
+			data: makeData([0,0,0,0,0,0,0,0,0])
 		};
 
-
-		setInterval(() => {
-			this.setState({
-				data: data
-			})
-		}, 1000);
-
-	}
-
-	componentWillMount() {
-
+		subscribeToServer('AA', (err, res) =>{
+			console.log(res);
+			setTimeout(()=>{
+				this.setState({
+					data:makeData(res)
+				});
+			}, 500);
+			
+		})
 	}
 
 	render() {
 		return (
 			<div>
-
 				<Pie data={this.state.data} height={720} width={700} />
-
 			</div>
 		);
 	}

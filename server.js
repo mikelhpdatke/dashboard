@@ -8,7 +8,7 @@ io.on('connection', (client)=>{
     client.on('sub_AA', (att_type) => {
         console.log('client is subcribing ...');
         setInterval(()=>{
-            client.emit(att_type, Math.floor(Math.random() * Math.floor(100)));
+            client.emit(att_type, Array.from({ length: 9 }, () => Math.floor(Math.random() * 40)));
         }, 500);
     });
 });
