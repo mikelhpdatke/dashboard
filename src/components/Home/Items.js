@@ -5,6 +5,7 @@ import {
 }from '../../icon/Icon'
 import PieExample from './Pie'
 import LineExample from './Line'
+import CountChart from './CountChart'
 import { Line } from 'react-chartjs-2';
 const Items_Log = () => (
     <div className="row cardRowLog" style={{ marginLeft: '8px' }}>
@@ -110,7 +111,9 @@ const Items_Dectects = () => (
             </figure>
         </div>
     </div>
+    
     <PieExample/>
+    
     </div>
 )
 
