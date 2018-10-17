@@ -45,7 +45,11 @@ const Items_Log = () => (
 )
 
 class Items extends Component{
+    
     render(){
+        let chartLine = <LineExample/>
+        if (this.props.showChart === 0)
+            chartLine = <div></div>
         return (
         <div>
         <div className="row cardRow" >
@@ -76,7 +80,7 @@ class Items extends Component{
             </figure>
         </div>
         </div>
-        <LineExample/>
+            {chartLine}
         </div>
         );
     }

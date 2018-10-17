@@ -5,9 +5,9 @@ import openSocket from 'socket.io-client'
 
 const socket = openSocket('http://192.168.0.106:8000');
 
-function subscribeToServer(att_type, callback){
-    socket.on(att_type, res => callback(null, res));
-    socket.emit('sub_' + att_type, att_type);
+function subscribeToServer(att_type, callback) {
+	socket.on(att_type, res => callback(null, res));
+	socket.emit('sub_' + att_type, att_type);
 }
 
 const makeData = function (arrDataFromServer) {
@@ -56,17 +56,17 @@ class PieExample extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			data: makeData([0,0,0,0,0,0,0,0,0])
+			data: makeData([0, 0, 0, 0, 0, 0, 0, 0, 0])
 		};
 
-		subscribeToServer('AA', (err, res) =>{
-			console.log(res);
-			setTimeout(()=>{
-				this.setState({
-					data:makeData(res)
-				});
-			}, 500);
-			
+		subscribeToServer('AA', (err, res) => {
+			//console.log(res);
+
+			this.setState({
+				data: makeData(res)
+			});
+
+
 		})
 	}
 
