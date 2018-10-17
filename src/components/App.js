@@ -7,6 +7,7 @@ import Header from './Header'
 import Home from './Home/Home'
 import LogManagement from './LogManagement/LogManagement'
 import ServiceManagement from './ServiceManagement/ServiceManagement'
+import Setting from './SettingManagement/Setting'
 const App = () => (
   <div>
     <Header />
@@ -20,6 +21,7 @@ const Main = () => (
       <Route exact path='/' component={Home}/>
       <Route path='/log_management' component={LogManagement}/>
       <Route path='/service_management' component={ServiceManagement}/>
+      <Route path='/setting' component={Setting}/>
     </Switch>
   </main>
 )
