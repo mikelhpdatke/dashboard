@@ -7,17 +7,28 @@ class Setting extends Component {
             <div>
                 <h4>Thiết lập</h4>
                 <div id='formSubmitSetting'>
-                    <form>
-                        <div class="form-group row">
-                            <label for="staticEmail" class="col-sm-5 col-form-label">IP Máy chủ</label>
-                            <div class="col-sm-10">
-                                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="192.168.0.2" />
+                    <form className="needs-validation" noValidate>
+                        <div className="form-row">
+                            <div className="col-md-6 mb-3">
+                                <label htmlFor="validationCustom03">IP Máy chủ</label>
+                                <input type="text" className="form-control" id="validationCustom03" placeholder="0.0.0.0" required />
+                                <div className="invalid-feedback">
+                                    Please provide a valid IP.
+                            </div>
+                            </div>
+                            <div className="col-md-6 mb-3">
+                                <label htmlFor="validationCustom04">Thời gian cập nhật</label>
+                                <input type="text" className="form-control" id="validationCustom04" placeholder="Đơn vị: Giây" required />
+                                <div className="invalid-feedback">
+                                    Please provide a valid input. For ex: 5
+                            </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="inputPassword" class="col-sm-5 col-form-label">Khoảng thời gian nhận dữ liệu</label>
-                            <div class="col-sm-10">
-                                <input type="number" class="form-control" id="inputPassword" placeholder="5" />
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </form>
